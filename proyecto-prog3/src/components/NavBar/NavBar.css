@@ -1,0 +1,16 @@
+.ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.link{
+    text-decoration: none;
+    color: aqua;
+}

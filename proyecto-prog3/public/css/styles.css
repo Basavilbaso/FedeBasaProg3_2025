@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gold;
+}
+
+main{
+    margin: 20px;
+}
+
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+}
+
+.tm{
+    height: 20vh;
+    width: 215px;
+}
+
+
+.header{
+    margin-top: 10px;
+}
+
+nav{
+    background-color: black;
+    padding: 10px;
+    height: 10vh;
+}
+
+.ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.titulo{
+    margin-bottom: 25px;
+    border-bottom: black solid 3px;
+}
+
+
+
+
+h2{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 60px;
+}
