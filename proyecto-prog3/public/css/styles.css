@@ -52,9 +52,8 @@ li{
 .titulo{
     margin-bottom: 25px;
     border-bottom: black solid 3px;
+    color: white
 }
-
-
 
 
 h2{
@@ -62,4 +61,13 @@ h2{
  flex-direction: column;
  align-items: center;
  margin-top: 60px;
+}
+
+.contenedor{
+    background-color: black;
+}
+
+.l{
+    color: white;
+    text-decoration: none;
 }

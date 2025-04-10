@@ -1,0 +1,9 @@
+section{
+    color: whitesmoke;
+    padding: 25px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
