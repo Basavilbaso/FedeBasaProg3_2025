@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { apikey } from "../utils";
+import { apikey } from "../apikey";
 
 
 class Detalle extends Component {
@@ -27,7 +27,7 @@ class Detalle extends Component {
 
     render() {
         const { pelicula } = this.state;
-
+        
         return (
             <>
                 {
