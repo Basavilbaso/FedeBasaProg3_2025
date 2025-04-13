@@ -19,11 +19,11 @@ function App() {
    <Header />
    <Switch>
     <Route exact path="/" component={Home}/>
-    <Route path="/Favorites" component={Favoritos}/>
+    <Route path="/favorites" component={Favoritos}/>
     <Route path="/Top-Rated" component={PeliculasMasValor}/>
     <Route path="/Now-Playing" component={PeliculasEnCartel}/>
-    <Route path="/Detail/id/:id" component={Detalle}/>
-    <Route path="/Search" component={SearchResults} />
+    <Route path="/detail/id/:id" component={Detalle}/>
+    <Route path="/search" component={SearchResults} />
     <Route component={NotFound} />
    </Switch>
 

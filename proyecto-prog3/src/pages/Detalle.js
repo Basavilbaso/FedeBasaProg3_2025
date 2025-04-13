@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { apikey } from "../apikey";
+import Favoritos from "../components/Favoritos/Favoritos";
 
 
 class Detalle extends Component {
@@ -27,7 +28,7 @@ class Detalle extends Component {
 
     render() {
         const { pelicula } = this.state;
-        
+
         return (
             <>
                 {
@@ -55,7 +56,7 @@ class Detalle extends Component {
                                 </div>
                             )}
 
-                            <button className="boton-favorito">Agregar a favoritos</button>
+                            <Favoritos id={pelicula.id} />
                         </article>
                     </section>
 
