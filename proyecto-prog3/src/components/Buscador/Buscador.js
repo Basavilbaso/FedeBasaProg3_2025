@@ -10,27 +10,22 @@ class Buscador extends Component {
         }
     }
 
-    handleCancelSubmit(e) {
-        e.preventDefault();
+    controlarEvento(evento){
+        evento.preventDefault()
+        this.props.history.push(`/search/` + this.state.search)
     }
 
-    handleFormChange(e) {
-        this.setState({ search: e.target.value })
-    }
-
-    controlarSubmit() {
-        if (this.state.search !== '') {
-            this.props.history.push(`/search`, { search: this.state.search })
-        }
+    controlarInput(evento){
+        this.setState({search: evento.target.value})
     }
 
     render() {
         return (
             <section>
                 <div>
-                    <form onSubmit={(e) => this.handleCancelSubmit(e)}>
-                        <input onChange={(event) => this.handleFormChange(event)} name="search" value={this.state.search} />
-                        <button type="submit" onClick={() => this.controlarSubmit()}>Search</button>
+                    <form onSubmit={(evento) => this.controlarEvento(evento)}>
+                        <input onChange={(evento) => this.controlarInput(evento)} name="search" value={this.state.search}  />
+                        <button type="submit">Search</button>
                     </form>
                 </div>
             </section>
@@ -38,3 +33,7 @@ class Buscador extends Component {
     }
 }
 export default Buscador;
+
+   
+
+   
