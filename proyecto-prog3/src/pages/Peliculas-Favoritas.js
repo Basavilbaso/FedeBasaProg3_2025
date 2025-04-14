@@ -40,7 +40,8 @@ class Favoritos extends Component {
         const peliculasFiltradas = this.state.peliculas.filter(
             elm => elm.id !== id
         )
-        this.setState({ peliculas: peliculasFiltradas })
+        this.setState({ peliculas: peliculasFiltradas, haypelis: peliculasFiltradas.length > 0 })
+       
     }
 
     render() {
@@ -54,14 +55,14 @@ class Favoritos extends Component {
                         this.state.peliculas.map((pelicula, idx) =>
                             <Peliculas
                                 peliculas={pelicula}
-                                key={idx}
+                                key={`${idx}-${pelicula.title}`}
                                 borrarDeFavoritos={(id) => this.filtrarPeliculasFavoritas(id)}
                             />)
                         :
                         this.state.haypelis === false ?
-                            <h1>No se encuentran peliculas seleccionandas como favoritas.</h1>
+                           <h1>No se encuentran peliculas seleccionandas como favoritas.</h1>
                             :
-                            <h1>Cargando...</h1>
+                        <h1>Cargando...</h1>
                 }
                 </section>
             </>
@@ -71,5 +72,3 @@ class Favoritos extends Component {
 
 }
 export default Favoritos;
-
-   
