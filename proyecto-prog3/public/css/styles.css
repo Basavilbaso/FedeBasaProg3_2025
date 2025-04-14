@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: rgb(255, 0, 43);
+    background-color: rgb(72, 70, 70);
 }
 
 main{
@@ -85,7 +85,7 @@ h2{
     display: inline-block;
     margin-left: 20px;
   }
-  
+
   @media (max-width: 400px) {
     .logo {
       flex-direction: column;
