@@ -34,7 +34,7 @@ class PeliculasInfo extends Component {
         {<button className="boton" onClick={() => this.clickViewDescription()}>{this.state.viewDescription ? "Ocultar descripcion": "Ver descripcion"}</button>}
         <p className={`description ${this.state.viewDescription ? "show" : "hide"}`}>{overview}</p>
         <button className="boton"><Link className="detalle"  to={`/Detail/id/${id}`}>Ir a detalle</Link></button>
-        <Favoritos id={id} borrarDeFvaoritos={this.props.borrarDeFvaoritos}/>
+        <Favoritos id={id} borrarDeFavoritos={this.props.borrarDeFavoritos}/>
       </article>
     );
   }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
-import { apikey } from "../utils";
-import Pelicula from "../components/Pelicula/Pelicula"
+import { apikey } from "../apikey";
+import Peliculas from "../components/Peliculas/Peliculas"
 
 
 class Favoritos extends Component {
@@ -52,7 +52,7 @@ class Favoritos extends Component {
                     
                     this.state.peliculas.length > 0 ?
                         this.state.peliculas.map((pelicula, idx) =>
-                            <Pelicula
+                            <Peliculas
                                 peliculas={pelicula}
                                 key={idx}
                                 borrarDeFavoritos={(id) => this.filtrarPeliculasFavoritas(id)}
@@ -71,4 +71,5 @@ class Favoritos extends Component {
 
 }
 export default Favoritos;
-//prueba 
+
+   
