@@ -3,8 +3,8 @@ import { Component } from "react";
 import { Link } from "react-router-dom";
 
 import Buscador from "../components/Buscador/Buscador"
-import PeliculasMasValor from "../components/PeliculasMasValor/PeliculasMasValor";
-import PeliculasEnCartel from "../components/PeliculasEnCartel/PeliculasEnCartel";
+import SeccionTopRated from "../components/SeccionTopRated/SeccionTopRated";
+import SeccionNowPlaying from "../components/SeccionNowPlaying/SeccionNowPlaying";
 
 class Home extends Component{
     render(){
@@ -17,12 +17,12 @@ class Home extends Component{
                <h2 className="titulo">Peliculas con valoracion más alta</h2>
                 <h3><Link className="l" to="/Top-Rated">Ver seccion</Link></h3>
             </div>
-            <PeliculasMasValor />
+            <SeccionTopRated />
             <div className="contenedor">
                <h2 className="titulo">Peliculas en cartel</h2>
                <h3><Link className="l" to="/Now-Playing">Ver seccion</Link></h3>
             </div>
-            <PeliculasEnCartel />
+            <SeccionNowPlaying />
         </main>
     </React.Fragment>
       )

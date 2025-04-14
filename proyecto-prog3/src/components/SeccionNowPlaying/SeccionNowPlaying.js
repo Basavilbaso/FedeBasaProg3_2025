@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import "./PeliculasEnCartel.css";
+import "./SeccionNowPlaying.css";
 import PeliculasInfo from "../Peliculas/Peliculas";
 import { apikey } from "../../apikey";
 
