@@ -5,3 +5,10 @@ footer{
     justify-content: space-around;
     border: 3px solid black;
 }
+@media (max-width: 600px) {
+    footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
