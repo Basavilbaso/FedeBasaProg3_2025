@@ -40,7 +40,7 @@ class Detalle extends Component {
                     <section className="section-detalle">
                         <article className="info">
                             <h3 className="tituloProd">
-                                <Link to={`/Detail/id/${pelicula.id}`}>{pelicula.title}</Link>
+                                <Link className="l" to={`/Detail/id/${pelicula.id}`}>{pelicula.title}</Link>
                             </h3>
                             <img className="foto" src={'https://image.tmdb.org/t/p/w342' + pelicula.poster_path} alt="foto" />
                             <p>Rating: {pelicula.vote_average}</p>

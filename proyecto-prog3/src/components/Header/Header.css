@@ -16,7 +16,7 @@ nav{
     padding: 10px;
     height: 10vh;
 }
-@media (max-width: 600px) {
+@media (max-width: 430px) {
     .logo {
       flex-direction: column;
       align-items: center;

@@ -23,9 +23,9 @@ class Buscador extends Component {
         return (
             <section>
                 <div>
-                    <form onSubmit={(evento) => this.controlarEvento(evento)}>
-                        <input onChange={(evento) => this.controlarInput(evento)} name="search" value={this.state.search}  />
-                        <button type="submit">Search</button>
+                    <form className="submit" onSubmit={(evento) => this.controlarEvento(evento)}>
+                        <input className="input" onChange={(evento) => this.controlarInput(evento)} name="search" value={this.state.search}  />
+                        <button className="ver" type="submit">Search</button>
                     </form>
                 </div>
             </section>
